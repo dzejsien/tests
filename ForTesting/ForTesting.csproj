@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\GenerateRoutes\GenerateRoutes.csproj" />
+    <ProjectReference Include="..\GenerateRoutes\GenerateRoutes.csproj" />
     <ProjectReference Include="..\CheckSomeCode\CheckSomeCode.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
   </ItemGroup>

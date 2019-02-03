@@ -8,12 +8,14 @@ namespace CheckSomeCode
     {
         public void Execute(Action<string> logMessage)
         {
-            CheckForeachOfEnumerableIfItWillBeYielded(logMessage);
+            //CheckerExecutor<CheckForeachIfYield>(logMessage, new CheckForeachIfYield.Config(5));
+            CheckerExecutor<CheckBoxing>(logMessage);
         }
 
-        private static void CheckForeachOfEnumerableIfItWillBeYielded(Action<string> logMessage)
+        private void CheckerExecutor<T>(Action<string> logMessage, object data = null) where T : IChecker, new()
         {
-            var list = CheckForeachIfYield.GetInt(5, logMessage).ToList();
+            var checker = new T();
+            checker.Check(logMessage, data);
         }
     }
 }
