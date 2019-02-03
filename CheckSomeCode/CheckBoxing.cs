@@ -9,8 +9,13 @@ namespace CheckSomeCode
             bool statusToCheck = true;
             var voStatus = new Status(true);
 
+            // no boxing here
             if (statusToCheck == voStatus)
                 logMessage("Status is true and is equal");
+
+            // on heap we can see that we have 2 Boolean instances
+            object testBox = statusToCheck;
+            object test2Box = statusToCheck;
         }
     }
 
