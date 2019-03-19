@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForTesting", "ForTesting\ForTesting.csproj", "{9DBC2925-0282-4E56-905D-D4115EA551D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForTesting", "ForTesting\ForTesting.csproj", "{9DBC2925-0282-4E56-905D-D4115EA551D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateRoutes", "GenerateRoutes\GenerateRoutes.csproj", "{5392460F-59B0-4C5D-8B39-DA8683B05FE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenerateRoutes", "GenerateRoutes\GenerateRoutes.csproj", "{5392460F-59B0-4C5D-8B39-DA8683B05FE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{E55DA808-C412-404E-8057-42EFAA29F6FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{E55DA808-C412-404E-8057-42EFAA29F6FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckSomeCode", "CheckSomeCode\CheckSomeCode.csproj", "{A9039D99-695E-4933-B66D-DB5B2EF0BFB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckSomeCode", "CheckSomeCode\CheckSomeCode.csproj", "{A9039D99-695E-4933-B66D-DB5B2EF0BFB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitSagas", "MassTransitSagas\MassTransitSagas.csproj", "{0EF2C34F-2851-40BD-8ED9-186529FC9112}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A9039D99-695E-4933-B66D-DB5B2EF0BFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9039D99-695E-4933-B66D-DB5B2EF0BFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9039D99-695E-4933-B66D-DB5B2EF0BFB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF2C34F-2851-40BD-8ED9-186529FC9112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF2C34F-2851-40BD-8ED9-186529FC9112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF2C34F-2851-40BD-8ED9-186529FC9112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF2C34F-2851-40BD-8ED9-186529FC9112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,13 +2,14 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GenerateRoutes\GenerateRoutes.csproj" />
     <ProjectReference Include="..\CheckSomeCode\CheckSomeCode.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\MassTransitSagas\MassTransitSagas.csproj" />
   </ItemGroup>
 
 </Project>
