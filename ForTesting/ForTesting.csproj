@@ -6,10 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GenerateRoutes\GenerateRoutes.csproj" />
     <ProjectReference Include="..\CheckSomeCode\CheckSomeCode.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\MassTransitSagas\MassTransitSagas.csproj" />
+    <ProjectReference Include="..\Tasks.Dependent\Tasks.Dependent.csproj" />
   </ItemGroup>
 
 </Project>
