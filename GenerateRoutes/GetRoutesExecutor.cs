@@ -7,7 +7,7 @@ namespace GenerateRoutes
 {
     public class GetRoutesExecutor : IExecutable
     {
-        public void Execute(Action<string> logMessage)
+        public void ExecuteAsync(Action<string> logMessage)
         {
             var props = typeof(TagRoutes).GetFields().Select(x => new { Name = x.Name , Value = x.GetRawConstantValue()});
 

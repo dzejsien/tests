@@ -6,7 +6,7 @@ namespace CheckSomeCode
 {
     public class CheckSomeCodeExecutor : IExecutable
     {
-        public void Execute(Action<string> logMessage)
+        public void ExecuteAsync(Action<string> logMessage)
         {
             //CheckerExecutor<CheckForeachIfYield>(logMessage, new CheckForeachIfYield.Config(5));
             CheckerExecutor<CheckBoxing>(logMessage);

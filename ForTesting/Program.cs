@@ -33,7 +33,7 @@ namespace ForTesting
             if (executorType != null)
             {
                 var executor = Activator.CreateInstance(executorType) as IExecutable ?? throw new ArgumentNullException();
-                executor.Execute(Console.WriteLine);
+                executor.ExecuteAsync(Console.WriteLine);
                 //File.WriteAllText(ResultFilePath, string.Empty);
                 //executor.Execute(WriteToFile);
             }

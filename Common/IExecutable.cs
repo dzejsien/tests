@@ -4,6 +4,6 @@ namespace Common
 {
     public interface IExecutable
     {
-        void Execute(Action<string> logMessage);
+        void ExecuteAsync(Action<string> logMessage);
     }
 }
