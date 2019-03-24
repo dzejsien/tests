@@ -22,7 +22,7 @@ namespace Tasks.Dependent
         {
             var data = InitData();
 
-            var executor = new DependebleExecutor();
+            var executor = new DependentExecutor();
             var container = await executor.ExecuteAsync(data);
 
             LogContainer(container);
@@ -31,33 +31,33 @@ namespace Tasks.Dependent
 
         public async Task ExecuteAsyncWithPreload()
         {
-            var container = new ConcurrentDictionary<Type, IDependant>();
+            var container = new ConcurrentDictionary<Type, IDependent>();
             // ... preloading container
             var data = InitData();
 
-            var executor = new DependebleExecutor();
+            var executor = new DependentExecutor();
             await executor.ExecuteAsync(data, container);
 
             LogContainer(container);
         }
 
-        private static IReadOnlyCollection<IDependant> InitData()
+        private static IReadOnlyCollection<IDependent> InitData()
         {
             var types = Assembly.GetCallingAssembly().GetTypes()
                             .Where(x => x.IsSubclassOf(typeof(MockedProcessor)));
 
-            var data = new List<IDependant>();
+            var data = new List<IDependent>();
 
             foreach (var type in types)
             {
-                data.Add(Activator.CreateInstance(type) as IDependant);
+                data.Add(Activator.CreateInstance(type) as IDependent);
             }
 
             return data;
         }
 
 
-        private void LogContainer(IDictionary<Type, IDependant> container)
+        private void LogContainer(IDictionary<Type, IDependent> container)
         {
             var i = 0;
             foreach (var item in container)

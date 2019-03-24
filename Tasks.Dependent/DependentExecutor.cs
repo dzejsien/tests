@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace Tasks.Dependent
 {
-    public class DependebleExecutor : IDependebleExecutor
+    public class DependentExecutor : IDependentExecutor
     {
-        private ILogger _log = Log.Logger.ForContext<DependebleExecutor>();
+        private ILogger _log = Log.Logger.ForContext<DependentExecutor>();
 
-        private IDictionary<Type, IDependant> _container = new ConcurrentDictionary<Type, IDependant>();
-        private IList<IDependant> _watingForExecution = new List<IDependant>();
+        private IDictionary<Type, IDependent> _container = new ConcurrentDictionary<Type, IDependent>();
+        private IList<IDependent> _watingForExecution = new List<IDependent>();
 
-        public async Task<IDictionary<Type, IDependant>> ExecuteAsync(IReadOnlyCollection<IDependant> toExecute, ConcurrentDictionary<Type, IDependant> container)
+        public async Task<IDictionary<Type, IDependent>> ExecuteAsync(IReadOnlyCollection<IDependent> toExecute, ConcurrentDictionary<Type, IDependent> container)
         {
             _container = container ?? throw new ArgumentNullException(nameof(container));
             return await ExecuteAsync(toExecute);
         }
 
-        public async Task<IDictionary<Type, IDependant>> ExecuteAsync(IReadOnlyCollection<IDependant> toExecute)
+        public async Task<IDictionary<Type, IDependent>> ExecuteAsync(IReadOnlyCollection<IDependent> toExecute)
         {
             _watingForExecution = toExecute.ToList();
             var readyToExecute = GetReadyForExecution().Select(x => x.ProcessAsync()).ToList();
@@ -46,7 +46,7 @@ namespace Tasks.Dependent
             return _container;
         }
 
-        private IEnumerable<IDependant> GetReadyForExecution()
+        private IEnumerable<IDependent> GetReadyForExecution()
         {
             var toMove = _watingForExecution.Where(x => !x.DependsOn.Any() || x.DependsOn.All(y => _container.ContainsKey(y))).ToList();
 

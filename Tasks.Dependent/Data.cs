@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Tasks.Dependent
 {
-    public class DataA : MockedProcessor, IDependant
+    public class DataA : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -15,7 +15,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataB : MockedProcessor, IDependant
+    public class DataB : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -26,7 +26,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataC : MockedProcessor, IDependant
+    public class DataC : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -37,7 +37,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataD : MockedProcessor, IDependant
+    public class DataD : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -48,7 +48,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataA2 : MockedProcessor, IDependant
+    public class DataA2 : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -59,7 +59,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataB2 : MockedProcessor, IDependant
+    public class DataB2 : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -70,7 +70,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataC2 : MockedProcessor, IDependant
+    public class DataC2 : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -81,7 +81,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataD2 : MockedProcessor, IDependant
+    public class DataD2 : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -92,7 +92,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataA22 : MockedProcessor, IDependant
+    public class DataA22 : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -103,7 +103,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataB3 : MockedProcessor, IDependant
+    public class DataB3 : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -114,7 +114,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataC22 : MockedProcessor, IDependant
+    public class DataC22 : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -125,7 +125,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataD3 : MockedProcessor, IDependant
+    public class DataD3 : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {
@@ -136,7 +136,7 @@ namespace Tasks.Dependent
         }
     }
 
-    public class DataAB2 : MockedProcessor, IDependant
+    public class DataAB2 : MockedProcessor, IDependent
     {
         public override IEnumerable<Type> DependsOn
         {

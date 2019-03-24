@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Tasks.Dependent
 {
-    public interface IDependebleExecutor
+    public interface IDependentExecutor
     {
-        Task<IDictionary<Type, IDependant>> ExecuteAsync(IReadOnlyCollection<IDependant> toExecute);
-        Task<IDictionary<Type, IDependant>> ExecuteAsync(IReadOnlyCollection<IDependant> toExecute, ConcurrentDictionary<Type, IDependant> container);
+        Task<IDictionary<Type, IDependent>> ExecuteAsync(IReadOnlyCollection<IDependent> toExecute);
+        Task<IDictionary<Type, IDependent>> ExecuteAsync(IReadOnlyCollection<IDependent> toExecute, ConcurrentDictionary<Type, IDependent> container);
     }
 }

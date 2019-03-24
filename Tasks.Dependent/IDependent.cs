@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 namespace Tasks.Dependent
 {
-    public interface IDependant
+    public interface IDependent
     {
         IEnumerable<Type> DependsOn { get; }
-        Task<IDependant> ProcessAsync();
+        Task<IDependent> ProcessAsync();
     }
 }
