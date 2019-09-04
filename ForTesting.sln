@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckSomeCode", "CheckSomeC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitSagas", "MassTransitSagas\MassTransitSagas.csproj", "{0EF2C34F-2851-40BD-8ED9-186529FC9112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks.Dependent", "Tasks.Dependent\Tasks.Dependent.csproj", "{40BA8735-A42B-443D-9D60-6B9A1DB6FFB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks.Dependent", "Tasks.Dependent\Tasks.Dependent.csproj", "{40BA8735-A42B-443D-9D60-6B9A1DB6FFB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheExample", "CacheExample\CacheExample.csproj", "{9BD8B6FB-8266-4F23-A6A5-95A460B3B175}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{40BA8735-A42B-443D-9D60-6B9A1DB6FFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40BA8735-A42B-443D-9D60-6B9A1DB6FFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40BA8735-A42B-443D-9D60-6B9A1DB6FFB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD8B6FB-8266-4F23-A6A5-95A460B3B175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD8B6FB-8266-4F23-A6A5-95A460B3B175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD8B6FB-8266-4F23-A6A5-95A460B3B175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD8B6FB-8266-4F23-A6A5-95A460B3B175}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
